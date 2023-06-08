@@ -1,0 +1,285 @@
+
+/*
+Contents:
+    1. CSS resets
+    2. HTML file's hardcoded elements
+    3. JS boilerplate
+        - Tweet: main content
+        - Replies -section
+        - Create a new reply -section
+    4. Button, textarea, icon, image: global styles
+    5. Tweets' icons
+    6. Utility classes
+*/
+
+/* 1. CSS RESETS */
+
+:root {
+    --twimba-blue: #1DA1F2;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+   margin: 0;
+   padding: 0; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 300px;
+    align-items: center;
+    margin: 0.62rem auto;
+    position: relative;
+}
+
+image {
+    display: inline-block;
+    background-color: var(--twimba-blue);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 2. HTML file's hardcoded elements*/
+
+header {
+    padding: 1.56rem 0;
+}
+
+h1 {
+    font-size: 1.25rem;
+    color: var(--twimba-blue);
+    margin-top: 0;
+}
+
+h2 {
+    display: none;
+}
+
+#create-tweet-section {
+    grid-template-columns: 3em auto;
+    grid-template-rows: repeat(2, 3em);
+    grid-row-gap: 2.82rem;
+}
+
+.tweet-btn {
+    font-weight: 600;
+    grid-column-start: span 2;
+    height: 2.81rem;
+    background-color: var(--twimba-blue);
+    color: white;
+}
+
+#tweets-feed-section {
+    margin-top: 0.94rem;
+}
+
+/* 3. JS BOILERPLATE*/
+
+/*TWEET: main content*/
+
+.tweets-main-layout {
+    grid-template-columns: 3em auto 1.5em;
+    grid-template-rows: repeat(auto, auto-fit);
+    grid-row-gap: 0.7rem;
+
+    padding-top: 1.25rem;
+    border-top: 1px solid lightgray;
+    margin-bottom: 0.94rem;
+}
+
+.tweet-profile-pic {
+    grid-row-start: span 2;
+}
+
+.tweet-handle {
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    align-self: end;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.delete-icon {  
+    grid-column-start: 3;
+    grid-row-start: 1; 
+    justify-self: end;
+
+
+    font-size: 0.7rem;
+    line-height: 0.8em;
+    text-decoration-style: none;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+.tweet-paragraph {
+    grid-column-start: 2;
+
+    font-size: 0.87rem;
+    line-height: 1.25rem;
+}
+
+.wrapper-for-tweets-icons {
+    grid-column-start: 2;
+
+    display: flex;
+    width: fit-content;
+    gap: 1.56rem;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+/*REPLIES-section*/
+
+.tweets-replies-layout {
+    margin: auto;
+    width: 80%;
+    padding-bottom: 1em;
+    border-top: 1px solid lightgray;
+}
+
+/*CREATE A NEW REPLY- section*/
+
+.create-reply-section{
+    grid-template-columns: 3rem auto;
+    grid-row-gap: 0.8rem;
+    padding: 1.5rem 0;
+}
+
+.add-reply-btn {
+    grid-column: span 2;
+    color: var(--twimba-blue);
+    background-color: white;
+    border: 2px solid var(--twimba-blue);
+}
+
+.add-reply-textarea::placeholder {
+    font-size: 0.8em;
+}
+
+/* 4. BUTTONS, TEXTAREA, ICON, IMAGE - global styles */
+
+#start-over-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: fit-content;
+    padding: 0.5em 1em;
+
+    font-size: 0.6rem;
+    letter-spacing: 0.03rem;
+    color: var(--twimba-blue);
+}
+
+#start-over-btn:hover {
+    transform: scale(1.2);
+}
+
+#start-over-btn:active {
+    transform: scale(1);
+}
+
+button{
+    border-radius: 20px;
+    cursor: pointer; 
+}
+
+.icon-btn {
+    font-size: 0.8rem;
+    gap: 4px;
+    background: none;
+    width: fit-content;
+    cursor: default;
+}
+
+.icon-btn:hover,
+.icon-btn:focus,
+.icon-btn:active {
+    transform: none;
+    cursor: default;
+}
+
+i {
+    font-style: normal;
+}
+
+i:hover,
+i:focus {
+    cursor: pointer;
+}
+
+i:active {
+    transform: scale(0.9);
+}
+
+button,
+textarea {
+    font: inherit;
+    border: none;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+textarea {
+    resize: none;
+    line-height: 1.5em;
+    height: 3.75em;
+    padding: 0.4em 0.5em;
+    border-radius: 2px;
+}
+
+textarea:focus,
+textarea:active {
+    outline: 1px solid blue;
+}
+
+.icon-btn,
+#add-reply-btn,
+.add-reply-textarea {
+    font-size: 0.94rem;
+    line-height: 1.33em;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.profile-pic{
+    border-radius: 50%;
+    width: 3rem;
+}
+
+/* 5. TWEETS' ICONS*/
+
+.fa-solid{
+    color: #999;
+}
+
+.liked{
+    color: red;
+}
+
+.retweeted {
+  color: limegreen;
+}
+
+/* 6. UTILITY CLASSES */
+
+.grid {
+    display: grid;
+    grid-column-gap: 0.44rem;
+}
+
+.hidden{
+    display: none;
+}
