@@ -283,7 +283,7 @@ function getFeedHtml(){
                 <div class="tweets-replies-layout hidden" id="reply-section-${tweet.uuid}">      
                     
                     <div class="create-reply-section grid">
-                        <img src="images/scrimbalogo.png" class="profile-pic">
+                        <img src="/images/scrimbalogo.png" class="profile-pic">
                         <textarea placeholder="Reply to ${tweet.handle}" id="add-reply-textarea-${tweet.uuid}" class="add-reply-textarea"></textarea>
                         <button class="add-reply-btn" id="add-reply-btn" data-add-reply-btn="${tweet.uuid}">Reply</button>
                     </div>
