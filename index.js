@@ -236,7 +236,7 @@ function getFeedHtml(){
 
                 repliesHtml+=`                   
                     <div class="tweets-main-layout grid">
-                        <img :src="${reply.profilePic}" alt="Scrimba logo" class="profile-pic tweet-profile-pic">
+                        <img src="${reply.profilePic}" alt="Scrimba logo" class="profile-pic tweet-profile-pic">
                         <button class="icon-btn">
                             ${deleteOrHideIcon}
                         </button>
@@ -246,13 +246,13 @@ function getFeedHtml(){
                 `
             })            
         }        
-        //<img :src="imageUrl"
+       
         const scrimbaImageUrl =  new URL(`/images/scrimbalogo.png`, import.meta.url).href
         feedHtml += `
             <article>
                 <div class="tweets-main-layout grid" id="tweets-beginning-${tweet.uuid}">
 
-                    <img :src="${tweet.profilePic}" alt="a profile picture" class="profile-pic tweet-profile-pic">                              
+                    <img src="${tweet.profilePic}" alt="a profile picture" class="profile-pic tweet-profile-pic">                              
                     <p class="tweet-handle">${tweet.handle}</p>              
                     <button class="icon-btn">
                         ${deleteOrHideIcon}
@@ -285,7 +285,7 @@ function getFeedHtml(){
                 <div class="tweets-replies-layout hidden" id="reply-section-${tweet.uuid}">      
                     
                     <div class="create-reply-section grid">
-                        <img :src=${scrimbaImageUrl} class="profile-pic">
+                        <img src=${scrimbaImageUrl} class="profile-pic">
                         <textarea placeholder="Reply to ${tweet.handle}" id="add-reply-textarea-${tweet.uuid}" class="add-reply-textarea"></textarea>
                         <button class="add-reply-btn" id="add-reply-btn" data-add-reply-btn="${tweet.uuid}">Reply</button>
                     </div>
