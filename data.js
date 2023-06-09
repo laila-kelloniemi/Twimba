@@ -1,7 +1,7 @@
 export let tweetsData = [   
     {
         handle: `@TrollBot66756542 💎`,
-        profilePic: `images/troll.jpg`,
+        profilePic: `/images/troll.jpg`,
         likes: 27,
         retweets: 10,
         tweetText: `Buy Bitcoin, ETH Make 💰💰💰 low low prices. 
@@ -13,14 +13,14 @@ export let tweetsData = [
     },    
     {
         handle: `@Elon ✅`,
-        profilePic: `images/musk.png`,
+        profilePic: `/images/musk.png`,
         likes: 6500,
         retweets: 234,
         tweetText: `I need volunteers for a one-way mission to Mars 🪐. No experience necessary🚀`,
         replies: [
                   {
                 handle: `@TomCruise ✅`,
-                profilePic: `images/tcruise.png`,
+                profilePic: `/images/tcruise.png`,
                 tweetText: `Yes! Sign me up! 😎🛩`,
                 uuid: '10411db7-6cce-4596-bda4-eb69a4754b69',
             },
@@ -37,20 +37,20 @@ export let tweetsData = [
     },
         {
         handle: `@NoobCoder12`,
-        profilePic: `images/flower.png`,
+        profilePic: `/images/flower.png`,
         likes: 10,
         retweets: 3,
         tweetText: `Are you a coder if you only know HTML?`,
         replies: [
             {
                 handle: `@StackOverflower ☣️`,
-                profilePic: `images/overflow.png`,
+                profilePic: `/images/overflow.png`,
                 tweetText: `No. Obviosuly not. Go get a job in McDonald's.`,
                 uuid: '5046a77e-e923-4f72-94c3-5c0b4aa17da4',
             },
             {
                 handle: `@YummyCoder64`,
-                profilePic: `images/love.png`,
+                profilePic: `/images/love.png`,
                 tweetText: `You are wonderful just as you are! ❤️`,
                 uuid: '6d472a13-2a6b-4542-86c6-04a107cf5411',
             },
