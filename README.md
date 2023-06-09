@@ -9,7 +9,7 @@
 
 Twimba is a Twitter clone page, mimicking the design and several functionalities of Twitter. The Twimba project was originally created for a Javascript Essentials course by Scrimba - an online Front End Developer educational resource. 
 
-After completing this project within the Scrimba course, I have added several functionalities to the original Twimba page. This required changes in all files of the project. In addition, I made the CSS responsive. Details clarifying the differences between the original design and my own version of the Twimba can be found in !!!the Contribution!!!MAKE A LINK section below.
+After completing this project within the Scrimba course, I have added several functionalities to the original Twimba page. This required changes in all files of the project. In addition, I made the CSS responsive. Details clarifying the differences between the original design and my own version of the Twimba can be found in the <a href="#contribution"> Contribution </a>section below.
 <p>&nbsp;</p>
 
 ### Built With
@@ -28,8 +28,9 @@ Twimba was built using vanilla Javascript. Many of its features present common d
 
 ## About Twimba
 
-
-[![screenshot of Twimba page]()
+<div align="center">
+    <img src="/images/screenshot-Twimba.jpg" alt="image of Twimba landing page" width="405" height="600">
+ </div>
 
 Twimba was built as a Front End project; it showcases all the basic Front End requirements for a social media web app, such as commenting, posting, liking, and saving data in the localStorage for browser refresh. It is not intended to be a fully functional app, since it does not have any Back End functionalities. It was, however, a delightful opportunity to learn how to build the Front End of a social media app.
 
