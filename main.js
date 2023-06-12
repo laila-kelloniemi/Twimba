@@ -2,7 +2,7 @@
 
 import { tweetsData } from './data.js'
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
-const scrimbaImageUrl =  new URL(`/images/scrimbalogo.png`, import.meta.url).href
+const scrimbaImageUrl = './images/scrimbalogo.png'
 
 let storageTweetsDataArray = []
 checkLocalStorage() 
@@ -96,7 +96,7 @@ function handleShowReplies(tweetId){
     if(newTweetText.length > 0){
         storageTweetsDataArray.unshift({
             handle: `@Scrimba`,
-            profilePic: `${scrimbaImageUrl}`,
+            profilePic: scrimbaImageUrl,
             likes: 0,
             retweets: 0,
             tweetText: newTweetText,
@@ -121,7 +121,7 @@ function handleShowReplies(tweetId){
     if(replyText.length > 0){
         targetTweetObj.replies.unshift({
             handle: `@Scrimba`,
-            profilePic: `${scrimbaImageUrl}`,
+            profilePic: scrimbaImageUrl,
             tweetText: `${replyText}`,
             uuid: uuidv4()
         },) 
@@ -237,7 +237,7 @@ function getFeedHtml(){
 
                 repliesHtml+=`                   
                     <div class="tweets-main-layout grid">
-                        <img src="${scrimbaImageUrl}" alt="Scrimba logo" class="profile-pic tweet-profile-pic">
+                        <img src="${reply.profilePic}" alt="Scrimba logo" class="profile-pic tweet-profile-pic">
                         <button class="icon-btn">
                             ${deleteOrHideIcon}
                         </button>
@@ -245,9 +245,11 @@ function getFeedHtml(){
                         <p class="tweet-paragraph">${reply.tweetText}</p>
                     </div>
                 `
+    
             })            
         }        
        
+
         feedHtml += `
             <article>
                 <div class="tweets-main-layout grid" id="tweets-beginning-${tweet.uuid}">

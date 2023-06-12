@@ -1,13 +1,12 @@
 
-const trollImageUrl =  new URL(`/images/troll.jpg`, import.meta.url).href
-const muskImageUrl =  new URL(`/images/musk.png`, import.meta.url).href
-const tcruiseImageUrl =  new URL(`/images/tcruise.png`, import.meta.url).href
-const norrisImageUrl =  new URL(`/images/chucknorris.jpeg`, import.meta.url).href
-const noobImageUrl =  new URL(`/images/flower.png`, import.meta.url).href
-const overflowImageUrl =  new URL(`/images/overflow.png`, import.meta.url).href
-const loveImageUrl =  new URL(`/images/love.png`, import.meta.url).href
+const trollImageUrl = './images/troll.jpg'
+const muskImageUrl =  './images/musk.png'
+const tcruiseImageUrl =  './images/tcruise.png'
+const norrisImageUrl =  './images/chucknorris.jpeg'
+const noobImageUrl =  './images/flower.png'
+const overflowImageUrl =  './images/overflow.png'
+const loveImageUrl =  './images/love.png'
 
-console.log(trollImageUrl)
 
 let tweetsData = [   
     {
