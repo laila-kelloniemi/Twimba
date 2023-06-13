@@ -2,7 +2,6 @@
 
 import { tweetsData } from './data.js'
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
-const scrimbaImageUrl = './images/scrimbalogo.png'
 
 let storageTweetsDataArray = []
 checkLocalStorage() 
@@ -96,7 +95,7 @@ function handleShowReplies(tweetId){
     if(newTweetText.length > 0){
         storageTweetsDataArray.unshift({
             handle: `@Scrimba`,
-            profilePic: scrimbaImageUrl,
+            profilePic: `images/scrimbalogo.png`,
             likes: 0,
             retweets: 0,
             tweetText: newTweetText,
@@ -112,7 +111,6 @@ function handleShowReplies(tweetId){
 
 //creates a new reply when "add-reply-btn" is clicked, adds it into the replies array, and calls resetLocalStorage()
  function handleAddReplyBtn(tweetId){  
-
     const replyInput = document.getElementById(`add-reply-textarea-${tweetId}`)
     const replyText = replyInput.value.trim()
 
@@ -121,7 +119,7 @@ function handleShowReplies(tweetId){
     if(replyText.length > 0){
         targetTweetObj.replies.unshift({
             handle: `@Scrimba`,
-            profilePic: scrimbaImageUrl,
+            profilePic: `images/scrimbalogo.png`,
             tweetText: `${replyText}`,
             uuid: uuidv4()
         },) 
@@ -245,11 +243,9 @@ function getFeedHtml(){
                         <p class="tweet-paragraph">${reply.tweetText}</p>
                     </div>
                 `
-    
             })            
         }        
-       
-
+        
         feedHtml += `
             <article>
                 <div class="tweets-main-layout grid" id="tweets-beginning-${tweet.uuid}">
@@ -287,7 +283,7 @@ function getFeedHtml(){
                 <div class="tweets-replies-layout hidden" id="reply-section-${tweet.uuid}">      
                     
                     <div class="create-reply-section grid">
-                        <img src="${scrimbaImageUrl}" class="profile-pic">
+                        <img src="images/scrimbalogo.png" class="profile-pic">
                         <textarea placeholder="Reply to ${tweet.handle}" id="add-reply-textarea-${tweet.uuid}" class="add-reply-textarea"></textarea>
                         <button class="add-reply-btn" id="add-reply-btn" data-add-reply-btn="${tweet.uuid}">Reply</button>
                     </div>
