@@ -9,6 +9,9 @@ const noobImageUrl =  './images/flower.png'
 const overflowImageUrl =  './images/overflow.png'
 const loveImageUrl =  './images/love.png'*/
 
+console.log(images)
+console.log(images['./images/troll.jpg'])
+
 let tweetsData = [   
     {
         handle: `@TrollBot66756542 💎`,
