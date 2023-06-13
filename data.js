@@ -1,17 +1,19 @@
+const images = import.meta.glob('./images/**', { eager: true });
 
-const trollImageUrl = './images/troll.jpg'
+
+/*const trollImageUrl = './images/troll.jpg'
 const muskImageUrl =  './images/musk.png'
 const tcruiseImageUrl =  './images/tcruise.png'
 const norrisImageUrl =  './images/chucknorris.jpeg'
 const noobImageUrl =  './images/flower.png'
 const overflowImageUrl =  './images/overflow.png'
-const loveImageUrl =  './images/love.png'
+const loveImageUrl =  './images/love.png'*/
 
 
 let tweetsData = [   
     {
         handle: `@TrollBot66756542 💎`,
-        profilePic: trollImageUrl,
+        profilePic: images['/images/troll.jpg'](),
         likes: 27,
         retweets: 10,
         tweetText: `Buy Bitcoin, ETH Make 💰💰💰 low low prices. 
