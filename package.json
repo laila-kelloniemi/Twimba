@@ -1,0 +1,28 @@
+{
+  "name": "twimba-a-twitter-clone-page-by-laila",
+  "version": "1.0.2",
+  "description": "reverted-to-basic-settings",
+  "main": "main.js",
+  "scripts": {
+    "test": "\"\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laila-kelloniemi/Twimba.git"
+  },
+  "keywords": [
+    "web-development",
+    "javascript",
+    "css",
+    "html",
+    "scrimba",
+    "front-end",
+    "twimba"
+  ],
+  "author": "Laila Kelloniemi <lailakelloniemi@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laila-kelloniemi/Twimba/issues"
+  },
+  "homepage": "https://github.com/laila-kelloniemi/Twimba#readme"
+}
