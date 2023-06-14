@@ -3,13 +3,13 @@
 
 <!-- ABOUT THE PROJECT -->
 <h1 align="center">Twimba</h1>
-<h3 align="center">- the Twitter clone created by Scrimba, and further developed by me</h3>
+<h3 align="center">- the Twitter Clone Created by Scrimba, and Further Developed by Me</h3>
 
 <p>&nbsp;</p>
 
-Twimba is a Twitter clone page, mimicking the design and several functionalities of Twitter. The Twimba project was originally created for a Javascript Essentials course by Scrimba - an online Front End Developer educational resource. 
+Twimba is a Twitter clone that mimics the design and various functionalities of Twitter. The Twimba project was originally created for a Javascript Essentials course offered by Scrimba, an online educational resource for front-end development.
 
-After completing this project within the Scrimba course, I have added several functionalities to the original Twimba page. This required changes in all files of the project. In addition, I made the CSS responsive. Details clarifying the differences between the original design and my own version of the Twimba can be found in the <a href="#contribution"> Contribution </a>section below.
+Upon completing the project in the Scrimba course, I expanded the functionality of the original Twimba page, making modifications across all project files. Additionally, I made the CSS responsive. For details clarifying the differences between the original design and my own version of the Twimba, please refer to the <a href="#contributions"> Contributions </a>section below.
 <p>&nbsp;</p>
 
 ### Built With
@@ -22,7 +22,7 @@ After completing this project within the Scrimba course, I have added several fu
 
 
 
-Twimba was built using vanilla Javascript. Many of its features present common development problems, which could have been solved using frameworks and libraries. However, the intent for building Twimba was to learn how to think through pure Javascript and find solutions to problems using only the coding language in question. 
+Twimba was built using vanilla Javascript. Many of its features present common development problems, which could be solved using frameworks and libraries. However, the purpose of building Twimba was to develop problem-solving skills and gain a deeper understanding of pure JavaScript by relying solely on the coding language itself.
 
 <p>&nbsp;</p>
 
@@ -32,31 +32,33 @@ Twimba was built using vanilla Javascript. Many of its features present common d
     <img src="/images/screenshot-Twimba.jpg" alt="image of Twimba landing page" width="405" height="600">
  </div>
 
-Twimba was built as a Front End project; it showcases all the basic Front End requirements for a social media web app, such as commenting, posting, liking, and saving data in the localStorage for browser refresh. It is not intended to be a fully functional app, since it does not have any Back End functionalities. It was, however, a delightful opportunity to learn how to build the Front End of a social media app.
+Twimba was built as a front-end project; it showcases all the basic a front-end requirements for a social media web app, such as commenting, posting, liking, and saving data in the localStorage for browser refresh. It is not intended to be a fully functional app, since it does not have any back-end functionalities. It was, however, a delightful opportunity to learn how to build the a front-end of a social media app.
 
-Opening the Twimba web page, a user can add previously added tweets, add their own tweet, react to a tweet, and reply to it. These will be stored through browser refresh until the user either deletes or hides a tweet or a reply or resets the whole app by clicking on the "start over" button.
+When accessing the Twimba web app, users can perform various actions such as replying to existing tweets, posting their own tweets, reacting to tweets, and engaging in threaded replies. These interactions persist after browser refresh, unless the user chooses to delete or hide a tweet or reset the entire app by clicking the 'start over' button.
 
-!!! ADD LINK TO THE NETLIFY PAGE
+[https://twimba-twitter-clone-by-laila2023.netlify.app/](https://twimba-twitter-clone-by-laila2023.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <p>&nbsp;</p>
 
-## Contribution
+## Contributions
 
-My contribution to developing Twimba was to do with responsive CSS, UX additions, some stylistic variations, and certain Javascript features. These include: storing the user-imposed changes in localStorage, the ability to remove and hide individual tweets and replies, the ability to post replies, and the start-over feature to reset Twimba. 
+In my contribution to developing Twimba, I focused on implementing new JavaScript features, UX enhancements, and responsive CSS.
 
-During the Scrimba course, the following features were finished: rendering the tweet feed, creating a new tweet, and responsive replies, likes and retweet icons. Since then I have made several modifications to all these features as well. 
+These features include storing user changes using localStorage, enabling the removal and hiding of individual tweets and replies, supporting reply functionality, and implementing the start-over feature to reset Twimba.
+
+During the Scrimba course, I completed the implementation of rendering the tweet feed, creating new tweets, and ensuring responsiveness for reply, like, and retweet icons. Since then, I have made several modifications to enhance these features further.
 
 The original Twimba app can be viewed in the Scrimba Front End Developer Career Path course, Essential Javascript Concepts module:
 
-[View the original Twimba app](https://scrimba.com/learn/frontend)
+[https://scrimba.com/learn/frontend](https://scrimba.com/learn/frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <p>&nbsp;</p>
 
 ## Feedback & Licensing
 
-If you have any feedback, improvement suggestions, or corrections to my code, I would be more than grateful to receive them. Please create a pull request, comment, or contact me. Looking forward to hearing from you!
+I welcome any feedback, suggestions for improvement, or code corrections you may have. Feel free to reach out to me by creating an issue, a pull request, or contacting me on [LinkedIn](https://www.linkedin.com/in/laila-kelloniemi). I look forward to hearing from you!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -65,8 +67,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-+ Laila Kelloniemi - lailakelloniemi@icloud.com    
+
 + Project Link: [https://github.com/laila-kelloniemi/Twimba/](https://github.com/laila-kelloniemi/Twimba/)  
++ Twimba url: [https://twimba-twitter-clone-by-laila2023.netlify.app/](https://twimba-twitter-clone-by-laila2023.netlify.app/)  
++ [Laila Kelloniemi Github profile](https://github.com/laila-kelloniemi)   
++ [LinkedIn](https://www.linkedin.com/in/laila-kelloniemi)   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <p>&nbsp;</p>
